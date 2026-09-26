@@ -31,19 +31,3 @@ A full-stack library management system built with PHP and MySQL. Admins can mana
 ## Notes
 
 This is a student project built to practice full-stack development, secure coding practices (prepared statements, password hashing), and PHP/MySQL fundamentals. The booking/borrowing system is fully functional but intended for demonstration — there is no email or SMS integration for real-world reminders.
-
-### Login
-![Login](Screenshots%20PHP/login.png)
-
-### Dashboard
-![Dashboard 1](Screenshots%20PHP/dashboard1.png)
-![Dashboard 2](Screenshots%20PHP/dashboard2.png)
-
-### Add Book
-![Add Book](Screenshots%20PHP/ADDbook.png)
-
-### Edit Book
-![Edit Book](Screenshots%20PHP/EDITbook.png)
-
-### View as User
-![View as User](Screenshots%20PHP/ViewAsUser.png)
