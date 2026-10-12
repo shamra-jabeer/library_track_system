@@ -11,13 +11,15 @@ if(isset($_POST['login'])){
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if($result->num_rows > 0){
-        $_SESSION['admin'] = $username;
-        header("Location: dashboard.php");
-        exit();
-    } else {
-        $error = "Invalid username or password";
-    }
+   $row = $result->fetch_assoc();
+if($row && password_verify($password, $row['password'])){
+    session_regenerate_id(true);
+    $_SESSION['admin'] = $row['username'];
+    header("Location: dashboard.php");
+    exit();
+} else {
+    $error = "Invalid username or password";
+}
 }
 ?>
 
